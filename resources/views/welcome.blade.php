@@ -49,6 +49,7 @@
     </ul>
     <script>
         console.log('Nie pacz tu bo ci płyta głuwna spali się')
+        console.clear()
     </script>
 </div>
 </body>
