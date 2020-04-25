@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDesktopTable extends Migration
+class CreateImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateDesktopTable extends Migration
      */
     public function up()
     {
-        Schema::create('desktops', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
-            $table->integer('likes');
-            $table->longText('desktop_description');
+            $table->text('image_url');
             $table->timestamps();
         });
     }
@@ -29,6 +28,7 @@ class CreateDesktopTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('desktops');
+        Schema::dropIfExists('desktop_images');
+
     }
 }

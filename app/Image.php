@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
-    public function desktop() {
-        return $this->belongsTo('App\Desktop');
+    public function user() {
+        return $this->belongsTo('App\User');
     }
 }

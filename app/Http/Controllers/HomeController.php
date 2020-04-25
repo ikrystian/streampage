@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Desktop;
+use App\Image;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -29,7 +29,7 @@ class HomeController extends Controller
     }
 
     public function single($id) {
-        $desktop = Desktop::find(1);
-        return view('single', ['desktop' => $desktop]);
+        $image = Image::find(1);
+        return view('single', ['image' => $image]);
     }
 }

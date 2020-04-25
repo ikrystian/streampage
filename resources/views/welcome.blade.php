@@ -22,11 +22,14 @@
     </div>
     @endif
 
+
     <ul class="desktop-list">
+        @foreach($images as $image)
+
         <li>
-            <a href="/desktop/1">
+            <a href="/image/{{ $image->id }}">
                 <img
-                    src="https://bpcoders.nazwa.pl/images/1.jpg"
+                    src="{{ $image->image_url }}"
                     alt="">
                 <footer>
                     <span>Krystian</span>
@@ -34,18 +37,7 @@
                 </footer>
             </a>
         </li>
-        <li>
-            <a href="#">
-                <img
-                    src="https://bpcoders.nazwa.pl/images/2.jpg"
-                    alt="">
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <img src="https://bpcoders.nazwa.pl/images/3.jpg" alt="">
-            </a>
-        </li>
+        @endforeach
     </ul>
 
 </div>
