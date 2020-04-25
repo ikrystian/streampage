@@ -6,7 +6,15 @@
     <title>Best rating app</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+<style>
+    * {
+        display: none !important;
+    }
+</style>
 <body>
+
+<h1>Jeb z IT</h1>
+
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
     <div class="top-right links">
@@ -39,7 +47,9 @@
         </li>
         @endforeach
     </ul>
-
+    <script>
+        console.log('Nie pacz tu bo ci płyta głuwna spali się')
+    </script>
 </div>
 </body>
 </html>
